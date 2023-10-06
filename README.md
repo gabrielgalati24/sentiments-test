@@ -15,7 +15,7 @@ Prueba tecnica
 #FRONTEND
 
 ```bash
-cd frontend && npm i &&npm run dev
+cd frontend && npm i && npm run dev
 ```
 
 #Backend
@@ -40,6 +40,6 @@ Luego, puedes ejecutar las pruebas con:
 npm test
 
 
-EXTRA
-PONER EL CSV CON LA DATA DENTRO DEL PROYECTO DE DJANGO EN LA CARPETA DE assets
+EXTRA: 
+ PONER EL CSV CON LA DATA DENTRO DEL PROYECTO DE DJANGO EN LA CARPETA DE assets
 LA API KEY DE HUGGING_FACE se pueden cambiar en el .env de django
