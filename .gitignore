@@ -12,8 +12,7 @@ build/
 dist/
 out/
 
-# Ignore package-lock.json file
-package-lock.json
+
 
 # Ignore .DS_Store files on macOS
 .DS_Store
