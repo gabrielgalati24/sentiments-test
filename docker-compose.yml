@@ -1,0 +1,29 @@
+version: "3.7"
+   
+services:
+
+  backend:
+    build: 
+      context: ./django_sentiment_analysis
+    volumes:
+      - ./django_sentiment_analysis:/app
+    ports:
+      - "8000:8000"
+    command: sh -c "python manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DEBUG=0
+
+
+  vite_docker:
+    image: node:alpine
+    container_name: vite_docker
+    entrypoint: /bin/sh
+    ports:
+      - 3000:3000
+    working_dir: /frontend
+    volumes:
+      - type: bind
+        source: ./
+        target: /frontend
+    tty: true
+
