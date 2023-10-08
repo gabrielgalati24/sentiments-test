@@ -3,7 +3,7 @@ import AnalysisComponent from '../components/AnalysisComponent'
 
 import { Loader } from '@mantine/core';
 import { endpoints } from '../utils/endpoints';
-const BASE_URL = import.meta.env.VITE_URL_BACKEND + endpoints.analyze;
+const BASE_URL = import.meta.env.VITE_URL_BACKEND || "http://localhost:8000/api" + endpoints.analyze;
 
 export default function Home() {
 

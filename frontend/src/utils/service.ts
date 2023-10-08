@@ -3,7 +3,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import { urls } from "./endpoints";
 
-const SERVER_URL: string | undefined = import.meta.env.VITE_URL_BACKEND;
+const SERVER_URL: string | undefined = import.meta.env.VITE_URL_BACKEND || "http://localhost:8000/api";
 
 let tokenLocalStore: string | null = null;
 
