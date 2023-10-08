@@ -6,7 +6,7 @@ import { endpoints } from "./endpoints";
 import { notifications } from '@mantine/notifications';
 
 const login = async (values: unknown) : Promise<any> => {
-  const url = import.meta.env.VITE_URL_BACKEND  || "http://localhost:8000/api" + endpoints.login;
+  const url = import.meta.env.VITE_URL_BACKEND  || + endpoints.login;
 
   return axios
     .post(url, values)
@@ -27,7 +27,7 @@ const login = async (values: unknown) : Promise<any> => {
 };
 
 const register = async (values: unknown) : Promise<any> => {
-  const url = import.meta.env.VITE_URL_BACKEND || "http://localhost:8000/api" + endpoints.register;
+  const url = import.meta.env.VITE_URL_BACKEND  + endpoints.register;
 
   return axios
     .post(url, values)
