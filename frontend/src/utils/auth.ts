@@ -6,7 +6,7 @@ import { endpoints } from "./endpoints";
 import { notifications } from '@mantine/notifications';
 
 const login = async (values: unknown) : Promise<any> => {
-  const url = import.meta.env.VITE_URL_BACKEND  || + endpoints.login;
+  const url = import.meta.env.VITE_URL_BACKEND  + endpoints.login;
 
   return axios
     .post(url, values)
